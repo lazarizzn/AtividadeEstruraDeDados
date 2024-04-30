@@ -1,0 +1,80 @@
+const pesquisaIBGE = [
+    { nome: 'João Silva', cidade: 'Marília', idade: 25, sexo: 'Masculino', salario: 4500, filhos: 2 },
+    { nome: 'Maria Santos', cidade: 'Assis', idade: 33, sexo: 'Feminino', salario: 5700, filhos: 1 },
+    { nome: 'Pedro Souza', cidade: 'Bauru', idade: 45, sexo: 'Masculino', salario: 6300, filhos: 3 },
+    { nome: 'Ana Oliveira', cidade: 'Garça', idade: 38, sexo: 'Feminino', salario: 2900, filhos: 0 },
+    { nome: 'José Almeida', cidade: 'Ourinhos', idade: 29, sexo: 'Masculino', salario: 7400, filhos: 4 },
+    { nome: 'Fernanda Costa', cidade: 'Marília', idade: 21, sexo: 'Feminino', salario: 8100, filhos: 2 },
+    { nome: 'Carlos Lima', cidade: 'Assis', idade: 42, sexo: 'Masculino', salario: 4800, filhos: 1 },
+    { nome: 'Amanda Gomes', cidade: 'Bauru', idade: 39, sexo: 'Feminino', salario: 3800, filhos: 3 },
+    { nome: 'Rafael Pereira', cidade: 'Garça', idade: 53, sexo: 'Masculino', salario: 7000, filhos: 1 },
+    { nome: 'Juliana Fernandes', cidade: 'Ourinhos', idade: 26, sexo: 'Feminino', salario: 6500, filhos: 2 },
+    { nome: 'Márcio Barbosa', cidade: 'Marília', idade: 31, sexo: 'Masculino', salario: 5600, filhos: 0 },
+    { nome: 'Laura Rodrigues', cidade: 'Assis', idade: 47, sexo: 'Feminino', salario: 8200, filhos: 4 },
+    { nome: 'Gustavo Oliveira', cidade: 'Bauru', idade: 34, sexo: 'Masculino', salario: 3600, filhos: 1 },
+    { nome: 'Carolina Costa', cidade: 'Garça', idade: 28, sexo: 'Feminino', salario: 4900, filhos: 3 },
+    { nome: 'Diego Santos', cidade: 'Ourinhos', idade: 41, sexo: 'Masculino', salario: 6900, filhos: 2 },
+    { nome: 'Patrícia Alves', cidade: 'Marília', idade: 37, sexo: 'Feminino', salario: 7500, filhos: 1 },
+    { nome: 'Rodrigo Ferreira', cidade: 'Assis', idade: 32, sexo: 'Masculino', salario: 4300, filhos: 0 },
+    { nome: 'Vanessa Ribeiro', cidade: 'Bauru', idade: 24, sexo: 'Feminino', salario: 6100, filhos: 4 },
+    { nome: 'Aline Oliveira', cidade: 'Garça', idade: 36, sexo: 'Feminino', salario: 5800, filhos: 2 },
+    { nome: 'Mariano Costa', cidade: 'Ourinhos', idade: 49, sexo: 'Masculino', salario: 6900, filhos: 1 },
+    { nome: 'Renata Souza', cidade: 'Marília', idade: 27, sexo: 'Feminino', salario: 5100, filhos: 3 },
+    { nome: 'Ricardo Almeida', cidade: 'Assis', idade: 44, sexo: 'Masculino', salario: 6200, filhos: 2 },
+    { nome: 'Lúcia Fernandes', cidade: 'Bauru', idade: 30, sexo: 'Feminino', salario: 4800, filhos: 0 },
+    { nome: 'Giovanni Santos', cidade: 'Garça', idade: 35, sexo: 'Masculino', salario: 7300, filhos: 4 },
+    { nome: 'Tatiane Lima', cidade: 'Ourinhos', idade: 22, sexo: 'Feminino', salario: 5400, filhos: 1 },
+    { nome: 'Fernando Gomes', cidade: 'Marília', idade: 46, sexo: 'Masculino', salario: 6900, filhos: 2 },
+    { nome: 'Camila Pereira', cidade: 'Assis', idade: 29, sexo: 'Feminino', salario: 4200, filhos: 1 },
+    { nome: 'Lucas Rodrigues', cidade: 'Bauru', idade: 43, sexo: 'Masculino', salario: 6100, filhos: 3 },
+    { nome: 'Larissa Costa', cidade: 'Garça', idade: 25, sexo: 'Feminino', salario: 5100, filhos: 2 },
+    { nome: 'Paulo Oliveira', cidade: 'Ourinhos', idade: 40, sexo: 'Masculino', salario: 6700, filhos: 1 },
+    { nome: 'Silvia Almeida', cidade: 'Marília', idade: 33, sexo: 'Feminino', salario: 4700, filhos: 0 },
+    { nome: 'Leonardo Souza', cidade: 'Assis', idade: 39, sexo: 'Masculino', salario: 5400, filhos: 4 },
+    { nome: 'Mariana Lima', cidade: 'Bauru', idade: 24, sexo: 'Feminino', salario: 3800, filhos: 1 },
+    { nome: 'Eduardo Fernandes', cidade: 'Garça', idade: 41, sexo: 'Masculino', salario: 7200, filhos: 3 },
+    { nome: 'Cristiane Santos', cidade: 'Ourinhos', idade: 28, sexo: 'Feminino', salario: 5900, filhos: 2 },
+    { nome: 'Vinícius Gomes', cidade: 'Marília', idade: 37, sexo: 'Masculino', salario: 6600, filhos: 1 },
+    { nome: 'Fátima Pereira', cidade: 'Assis', idade: 31, sexo: 'Feminino', salario: 4300, filhos: 0 },
+    { nome: 'Hugo Rodrigues', cidade: 'Bauru', idade: 46, sexo: 'Masculino', salario: 6800, filhos: 4 },
+    { nome: 'Cássia Lima', cidade: 'Garça', idade: 27, sexo: 'Feminino', salario: 5000, filhos: 2 },
+    { nome: 'Daniel Alves', cidade: 'Ourinhos', idade: 35, sexo: 'Masculino', salario: 6400, filhos: 1 },
+    { nome: 'Renata Barbosa', cidade: 'Marília', idade: 22, sexo: 'Feminino', salario: 4000, filhos: 3 },
+    { nome: 'Josué Oliveira', cidade: 'Assis', idade: 40, sexo: 'Masculino', salario: 5900, filhos: 2 },
+    { nome: 'Luciana Costa', cidade: 'Bauru', idade: 26, sexo: 'Feminino', salario: 4700, filhos: 0 },
+    { nome: 'Alexandre Gomes', cidade: 'Garça', idade: 43, sexo: 'Masculino', salario: 7100, filhos: 4 },
+    { nome: 'Patrícia Lima', cidade: 'Ourinhos', idade: 32, sexo: 'Feminino', salario: 5600, filhos: 1 },
+    { nome: 'Raphael Fernandes', cidade: 'Marília', idade: 38, sexo: 'Masculino', salario: 6400, filhos: 2 },
+    { nome: 'Isabela Pereira', cidade: 'Assis', idade: 23, sexo: 'Feminino', salario: 4100, filhos: 1 },
+    { nome: 'Gabriel Rodrigues', cidade: 'Bauru', idade: 47, sexo: 'Masculino', salario: 6900, filhos: 3 },
+    { nome: 'Alessandra Costa', cidade: 'Garça', idade: 29, sexo: 'Feminino', salario: 4800, filhos: 2 },
+    { nome: 'Marcos Oliveira', cidade: 'Ourinhos', idade: 44, sexo: 'Masculino', salario: 7100, filhos: 1 },
+    { nome: 'Natália Almeida', cidade: 'Marília', idade: 36, sexo: 'Feminino', salario: 5900, filhos: 0 },
+    { nome: 'Felipe Souza', cidade: 'Assis', idade: 30, sexo: 'Masculino', salario: 5100, filhos: 4 },
+    { nome: 'Amanda Fernandes', cidade: 'Bauru', idade: 45, sexo: 'Feminino', salario: 6700, filhos: 2 },
+    { nome: 'Bruno Lima', cidade: 'Garça', idade: 28, sexo: 'Masculino', salario: 5200, filhos: 1 },
+    { nome: 'Carla Santos', cidade: 'Ourinhos', idade: 42, sexo: 'Feminino', salario: 7000, filhos: 3 },
+    { nome: 'Renato Gomes', cidade: 'Marília', idade: 33, sexo: 'Masculino', salario: 5600, filhos: 2 },
+    { nome: 'Fernanda Barbosa', cidade: 'Assis', idade: 26, sexo: 'Feminino', salario: 4500, filhos: 1 },
+    { nome: 'Marcos Rodrigues', cidade: 'Bauru', idade: 41, sexo: 'Masculino', salario: 6500, filhos: 0 },
+    { nome: 'Caroline Costa', cidade: 'Garça', idade: 39, sexo: 'Feminino', salario: 5900, filhos: 4 },
+    { nome: 'Ricardo Oliveira', cidade: 'Ourinhos', idade: 24, sexo: 'Masculino', salario: 4200, filhos: 2 },
+    { nome: 'Aline Almeida', cidade: 'Marília', idade: 37, sexo: 'Feminino', salario: 6200, filhos: 1 },
+    { nome: 'Roberto Souza', cidade: 'Assis', idade: 29, sexo: 'Masculino', salario: 5100, filhos: 3 },
+    { nome: 'Tatiana Lima', cidade: 'Bauru', idade: 38, sexo: 'Feminino', salario: 6400, filhos: 2 },
+    { nome: 'Thiago Fernandes', cidade: 'Garça', idade: 31, sexo: 'Masculino', salario: 5700, filhos: 0 },
+    { nome: 'Patricia Alves', cidade: 'Ourinhos', idade: 40, sexo: 'Feminino', salario: 6800, filhos: 4 },
+];
+
+const localizarPessoa = (nome) => {
+  for (const pessoa of pesquisaIBGE) {
+    if(pessoa.nome == nome){
+      return pessoa
+    }
+  }
+  return null;
+}
+
+exports.localizarPessoa = localizarPessoa;
+exports.pesquisaIBGE = pesquisaIBGE;
+
